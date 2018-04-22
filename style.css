@@ -1,0 +1,177 @@
+@charset "ISO-8859-1";
+
+
+ html{
+ 	height: 100%;
+ 	margin: 0px; /* this is something i had a issue with throughout design, i was unable to get the margin to dissapear from the top of the page */
+ 	display: inline;
+ 	background-color: white;
+ }
+ 
+ body {
+ 	margin: 0px;
+ 	height: 100%;
+ }
+ 
+ a {
+	text-decoration: none;
+	font-weight: bold; 
+ }
+ 
+ div {
+	padding: 5px; 
+ }
+ 
+.banner {
+	background-image: url("http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/iStock-488508586.jpg?itok=mUoGD7yg&resize=1100x619");
+	background-size: cover;
+	background-position: center; 
+	height: 10%;
+	width: 100%;
+	display: block;
+	opacity: 0.50;
+	color: yellow;
+}
+
+.picture {
+	background-image: url("http://www.lovegreece.com/wp-content/uploads/2016/07/code-blue-landscape-1.jpg");
+	height: calc(100% - 10% - 104px );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	alt="code falling";
+	} 
+
+.quote {
+	display: block;
+	background-color: black;
+	position: relative;
+	width: 40%;
+	height: 10%;
+	opacity: 0.70;
+	color: yellow;
+	padding: top;
+}
+
+.pagecontent {
+	width: 100%;
+	border: 1px outset black;
+	padding: 5px;
+	margin: 0;
+	background-color: beige;
+	text-align: center;
+	font-size: large;
+}
+
+.pagecontent p {
+	text-align: justify;
+}
+
+h2 {
+	color: green;
+	text-align: center;
+	font-size: large;
+}
+
+h3 {
+	color: green;
+	text-align: center;
+	font-size: large;
+}
+
+h4 {
+	color: green;
+	text-align: center;
+	font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+}
+
+#nav-list {
+	margin-left: 80%;
+	width: 20%;
+	list-style-type: none;
+	text-align: right;
+	padding-right: 5px;
+	font-size: medium;
+}
+
+#nav-list li {
+	display: inline;
+}
+
+
+/* .nav-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: inline block;
+	width: fit content;
+}
+*/
+
+.center { /* this code is from https://www.w3schools.com/howto/howto_css_image_center.asp */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#google { /* my google API is AIzaSyAKRsENwiKHmRGwfRhgMp7ozP_3dVKl01A */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+@media all and (max-width: 760px) { /* This should increase the text size on mobile devices, making the site easier to read */ 
+	.pagecontent {
+ 		font-size: x-large;
+	}
+}
+ 
+.columns {
+	display: flex;
+	justify-content: space-evenly;
+	min-height: 200px;
+	font-size: large;
+}
+
+.columns #latestposition {
+	background-color: #eee;
+}
+
+.columns div {
+	width: 100%;
+	text-align: center;
+}
+
+.columns ul{
+	font-size: medium;
+}
+
+.medialinks{
+	display: inline;
+	text-align: center;
+	font-size: large;
+}
+
+#contactform {
+	text-align: center;
+	font-size: large;
+}
